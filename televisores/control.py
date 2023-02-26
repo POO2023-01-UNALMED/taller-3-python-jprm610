@@ -1,8 +1,6 @@
-from televisores.tv import TV
-
 class Control :
     def __init__(self) :
-        self.tv:TV = None
+        self.tv = None
         return
     
     # GETS
@@ -44,6 +42,6 @@ class Control :
         self.tv.canal = canal
         return
     
-    def enlazar(self, tv:TV) :
+    def enlazar(self, tv) :
         self.tv = tv
         tv.setControl(self)
