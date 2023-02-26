@@ -59,6 +59,11 @@ class TV :
         self.canal = canal
         return
     
+    @staticmethod
+    def setNumTV(num) :
+        TV.numTV = num
+        return
+    
     # METODOS
     def turnOn(self) :
         self.estado = True
